@@ -36,11 +36,9 @@
           <div class = "col-md-2 offset-md-1 hour firsthour ">
               <h4> <b>9AM</b> </h4>
           </div>
-
-           <input type="schedule" 
-           class=" col-md-6 description" 
-           id="userinput" 
-           placeholder="Enter To-Do">
+           
+           <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
+           
           
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
             <h4> <b>Save</b> </h4>
@@ -51,13 +49,8 @@
                 <h4> <b>10AM</b> </h4>
             </div>
 
-            
-            <input type="schedule" 
-            class=" col-md-6 description" 
-            id="userinput" 
 
-            placeholder="Enter To-Do">
-
+           <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
                       
             <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
               <h4> <b>Save</b> </h4>
@@ -67,11 +60,9 @@
             <h4> <b>11AM</b> </h4>
           </div>
 
-          
-          <input type="schedule" 
-          class=" col-md-6 description" 
-          id="userinput" 
-          placeholder="Enter To-Do">
+        
+
+          <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
 
           
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
@@ -83,11 +74,8 @@
               <h4> <b>NOON</b> </h4>
           </div>
 
-          
-          <input type="schedule" 
-          class=" col-md-6 description" 
-          id="userinput" 
-          placeholder="Enter To-Do">
+
+          <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
 
                      
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
@@ -98,11 +86,8 @@
               <h4> <b>1PM</b> </h4>
           </div>
 
-          
-          <input type="schedule" 
-          class=" col-md-6 description" 
-          id="userinput" 
-          placeholder="Enter To-Do">
+
+          <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
 
          
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
@@ -114,11 +99,8 @@
               <h4> <b>2PM</b> </h4>
           </div>
 
-          
-          <input type="schedule" 
-          class=" col-md-6 description" 
-          id="userinput" 
-          placeholder="Enter To-Do">
+
+          <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
 
                
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
@@ -126,14 +108,11 @@
           </button>
         <!-- 3PM Row  -->
           <div class = "col-md-2 offset-md-1 hour ">
-          <h4> <b>PM</b> </h4>
+          <h4> <b>3PM</b> </h4>
           </div>
 
-          
-          <input type="schedule" 
-          class=" col-md-6 description" 
-          id="userinput" 
-          placeholder="Enter To-Do">
+
+          <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
 
           
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
@@ -145,11 +124,8 @@
               <h4> <b>4PM</b> </h4>
           </div>
 
-          
-          <input type="schedule" 
-          class=" col-md-6 description" 
-          id="userinput" 
-          placeholder="Enter To-Do">
+
+          <textarea class="form-control col-md-6" id="userinput" rows="5" placeholder="Enter To-Do"></textarea>
 
                
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
@@ -159,26 +135,9 @@
       </div>  
     </div>
 
+    <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-      <script type="text/javascript">
-      // To auto set screen to 90% zoom for easier viewing
-      var scale = 'scale(0.9)';
-      document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
-      document.body.style.msTransform =   scale;       // IE 9
-      document.body.style.transform = scale;     // General
-      
-      var userinput = [];
-      var display = localStorage.getItem("schedule")
-
-        // Function to save content into local storage 
-          $(".saveBtn").on("click",function(e){
-              e.preventDefault();
-              var userinput = $("#userinput").text;
-                localStorage.setitem("schedule", userinput);
-          });
-      
-      
-      </script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
