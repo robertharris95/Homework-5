@@ -31,15 +31,16 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <div class ="row time-block">
-        
+
         <!-- 9AM Row  -->
           <div class = "col-md-2 offset-md-1 hour firsthour ">
               <h4> <b>9AM</b> </h4>
           </div>
 
-          <div class = "col-md-6 description ">
-
-          </div>
+           <input type="schedule" 
+           class=" col-md-6 description" 
+           id="userinput" 
+           placeholder="Enter To-Do">
           
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
             <h4> <b>Save</b> </h4>
@@ -50,9 +51,13 @@
                 <h4> <b>10AM</b> </h4>
             </div>
 
-            <div class = "col-md-6 description ">
+            
+            <input type="schedule" 
+            class=" col-md-6 description" 
+            id="userinput" 
 
-            </div>
+            placeholder="Enter To-Do">
+
                       
             <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
               <h4> <b>Save</b> </h4>
@@ -62,10 +67,13 @@
             <h4> <b>11AM</b> </h4>
           </div>
 
-          <div class = "col-md-6 description ">
+          
+          <input type="schedule" 
+          class=" col-md-6 description" 
+          id="userinput" 
+          placeholder="Enter To-Do">
 
-          </div>
-        
+          
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
             <h4> <b>Save</b> </h4>
           </button>
@@ -75,10 +83,13 @@
               <h4> <b>NOON</b> </h4>
           </div>
 
-          <div class = "col-md-6 description ">
+          
+          <input type="schedule" 
+          class=" col-md-6 description" 
+          id="userinput" 
+          placeholder="Enter To-Do">
 
-          </div>
-                    
+                     
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
             <h4> <b>Save</b> </h4>
           </button>
@@ -87,10 +98,13 @@
               <h4> <b>1PM</b> </h4>
           </div>
 
-          <div class = "col-md-6 description ">
+          
+          <input type="schedule" 
+          class=" col-md-6 description" 
+          id="userinput" 
+          placeholder="Enter To-Do">
 
-          </div>
-
+         
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
             <h4> <b>Save</b> </h4>
           </button>
@@ -100,22 +114,28 @@
               <h4> <b>2PM</b> </h4>
           </div>
 
-          <div class = "col-md-6 description ">
+          
+          <input type="schedule" 
+          class=" col-md-6 description" 
+          id="userinput" 
+          placeholder="Enter To-Do">
 
-          </div>
-                    
+               
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
             <h4> <b>Save</b> </h4>
           </button>
-        <!-- 3M Row  -->
+        <!-- 3PM Row  -->
           <div class = "col-md-2 offset-md-1 hour ">
           <h4> <b>PM</b> </h4>
           </div>
 
-          <div class = "col-md-6 description ">
+          
+          <input type="schedule" 
+          class=" col-md-6 description" 
+          id="userinput" 
+          placeholder="Enter To-Do">
 
-          </div>
-
+          
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
           <h4> <b>Save</b> </h4>
           </button>
@@ -125,10 +145,13 @@
               <h4> <b>4PM</b> </h4>
           </div>
 
-          <div class = "col-md-6 description ">
+          
+          <input type="schedule" 
+          class=" col-md-6 description" 
+          id="userinput" 
+          placeholder="Enter To-Do">
 
-          </div>
-                    
+               
           <button type="button" class=" col-md-2 btn btn-primary btn-block saveBtn">
             <h4> <b>Save</b> </h4>
           </button>
@@ -138,5 +161,24 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script type="text/javascript">
+      // To auto set screen to 90% zoom for easier viewing
+      var scale = 'scale(0.9)';
+      document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
+      document.body.style.msTransform =   scale;       // IE 9
+      document.body.style.transform = scale;     // General
+      
+      var userinput = [];
+      var display = localStorage.getItem("schedule")
+
+        // Function to save content into local storage 
+          $(".saveBtn").on("click",function(e){
+              e.preventDefault();
+              var userinput = $("#userinput").text;
+                localStorage.setitem("schedule", userinput);
+          });
+      
+      
+      </script>
   </body>
 </html>
