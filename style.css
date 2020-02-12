@@ -23,6 +23,7 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+  border: 1px solid black;
 }
 
 .time-block{
@@ -40,6 +41,16 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  border: 1px solid black;
+  text-align: center;  
+}
+
+.firsthour{
+  border-top-left-radius: 15px;
+}
+
+.finalhour{
+  border-bottom-left-radius: 15px;
 }
 
 .past {
@@ -63,6 +74,9 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  border: 1px solid black;
+  text-align: center;
+
 }
 
 .saveBtn i:hover {
