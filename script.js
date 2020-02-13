@@ -21,7 +21,6 @@ var display = localStorage.getItem("schedule")
     var current = moment().format('MMMM Do YYYY, h:mm:ss a');
     var currenttime = moment().format('HH');
     var inputarea = document.querySelector(".hour")
-    console.log(currenttime)
     $("#currentDay").html(current);
 
     //To change the CSS as time goes on
@@ -44,11 +43,15 @@ var display = localStorage.getItem("schedule")
 
 
   // Function to save content into local storage 
-    $(".saveBtn").on("click",function(e){
+    $(".btn").on("click",function(e){
         e.preventDefault();
-        var userinput = $("#userinput").text;
-        localStorage.setitem("schedule", userinput);
+        var userinput = $("<textarea>");
+        console.log(userinput)
+        localStorage.setItem("schedule", userinput);
     });
 
-  
-//Methods
+  // Change text content to saved value 
+    // if(localStorage.getItem("schedule") !== ""){
+    //   $(".form-control").attr("", localStorage.getItem("schedule"));
+    // }
+    
