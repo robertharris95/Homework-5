@@ -6,7 +6,7 @@ body {
 
 textarea{
   background: transparent;
-  border: none;
+  border: 1px solid black;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
@@ -45,27 +45,22 @@ textarea{
   text-align: center;  
 }
 
-.firsthour{
-  border-top-left-radius: 15px;
-}
-
-.finalhour{
-  border-bottom-left-radius: 15px;
-}
-
 .past {
   background-color: #d3d3d3;
   color: gray;
+  border: 1px solid black;
 }
 
 .present {
   background-color: #ff6961;
   color: white;
+  border: 1px solid black;
 }
 
 .future {
   background-color: #77dd77;
   color: white;
+  border: 1px solid black;
 }
 
 .saveBtn {
